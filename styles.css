@@ -1,5 +1,105 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
-header {
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", serif;
+}
+
+.head,
+.first-container,
+.second-container,
+.third-container,
+.fourth-container,
+.foot {
+    display: flex; 
+    align-content: space-around;
+    padding:0px;
+    margin:0px;
+}
+/* =============================== Header ================================ */
+.head {
+    padding: 30px 10%;
     background-color: #1f2937;
+    color: white;
+    align-self: stretch;
+    justify-content: space;
+}
+
+.logo {
+ font-size: 32px; 
+ flex-grow: 2;
+}
+
+.nav_links {
+    list-style: none; 
+    flex-grow: 2;
+}
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+
+}
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    color: white;
+}
+.nav_links li a:hover {
+    color: #0088a9
+}
+/* =============================== First Container ================================ */
+.first-container {
+    color: white; 
+    background-color: #1f2937;
+    padding: 150px;
+}
+
+#left-side {
+    flex-grow: 2; 
+    column-gap: 30px;
+}
+
+#right-side {
+    flex-grow: 2; 
+    text-align: center;
+    color:#F9FAF8;
+    width:500px;
+    height:200px;
+    background-color: gray;
+}
+
+#right-side p{
+    margin:90px 0 0 0;
+}
+
+/* =============================== Second Container ================================ */
+.second-container {
+    padding: 150px;
+}
+
+/* =============================== Third Container ================================ */
+.third-container {
+    padding: 150px;
+    background-color: #e5e7eb;
+    color: #1f2937;
+    flex-direction: column;
+}
+
+
+/* =============================== Fourth Container ================================ */
+.fourth-container {
+    padding: 150px;
+    flex-direction: column;
+}
+
+/* =============================== Footer ================================ */
+.foot {
+    padding: 30px;
+    display: block;
+    text-align: center;
+    background-color: #1f2937;
+    color: white; 
+    
 }

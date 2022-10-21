@@ -4,9 +4,9 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Roboto", serif;
 }
 
+body
 .head,
 .first-container,
 .second-container,
@@ -14,8 +14,8 @@
 .fourth-container,
 .foot {
     display: flex; 
-    align-content: space-around;
-    padding:0px;
+    justify-content: space-around;
+    padding:10px;
     margin:0px;
 }
 /* ================================== Header =================================== */
@@ -24,17 +24,22 @@
     background-color: #1f2937;
     color: white;
     align-self: stretch;
-    justify-content: space;
+    justify-content: space-around;
 }
 
 .logo {
  font-size: 24px; 
+ padding-top: 20px;
+ padding-left: 100px;
  flex-grow: 2;
+ justify-content: space-around;
 }
 
 .nav_links {
     list-style: none; 
     flex-grow: 2;
+    padding-top: 20px;
+ padding-right: 100px;
 }
 .nav_links li {
     display: inline-block;
@@ -47,13 +52,13 @@
     color: white;
 }
 .nav_links li a:hover {
-    color: #13d3f9;
+    color: #3882f6;
 }
 /* =============================== First Container ================================ */
 .first-container {
     color: white; 
     background-color: #1f2937;
-    padding: 150px;
+    padding: 100px;
 }
 
 #left-side {
@@ -70,21 +75,22 @@
 
 .first-subtext {
 font-size: 18px;
+color: #e5e7eb;
 padding: 10px;
 }
 
 .first-button {
 background-color: #3882f6;
-border-radius: 50px;
+border-radius: 20px;
 border: none; 
-padding: 10px 25px; 
+padding: 10px 30px; 
 transition: all 0.3s ease 0s;
 cursor: pointer;
-padding: 10px;
 }
 
 .first-button:hover {
-    background-color: #13d3f9;;
+    color: #1f2937;
+    background-color: #f9faf8;
 }
 
 #right-side {
@@ -92,7 +98,7 @@ padding: 10px;
     text-align: center;
     color:#F9FAF8;
     width:500px;
-    height:200px;
+    height:250px;
     background-color: gray;
     border-radius: 15px;
 }
@@ -103,7 +109,7 @@ padding: 10px;
 
 /* =============================== Second Container ================================ */
 .second-container {
-    padding: 150px;
+    padding: 100px;
     flex-direction: column;
 }
 
@@ -115,10 +121,12 @@ padding: 10px;
 .second-subtext {
     width:180px;
     text-align: center;  
+    margin-top: 200px;
 }
 
 .cards {
     display: flex;
+    justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
     gap:20px;
@@ -137,63 +145,54 @@ padding: 10px;
     padding: 100px;
     background-color: #e5e7eb;
     flex-direction: column;
+    justify-content: center;
 }
 
 #third-text{
     margin-bottom:auto;
-    font-size: 36px;
+    font-weight: lighter;
+    font-size: 32px;
     font-style: italic;
-    font-weight: lighter; 
+    padding: 0 100px 0 100px; 
+    font-weight: 100; 
 }
 
 #third-subtext {
-    padding-left: 750px;
+    padding-left: 950px;
     align-items: flex-end;
 }
 
 /* =============================== Fourth Container ================================ */
 .fourth-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 100px;
-    flex-direction: column;
+    color: white; 
+    
 }
 
-
-.fourth{
-    margin:80px 100px 80px 100px;
+.sign-up {
+    display: flex;
     justify-content: space-around;
-    margin-left: auto;
-    margin-right: auto;
-    height:140px;
-    width:1000px;
-    background-color: #3882f6;
-    border-radius: 25px;
+    align-items: center;
+    background-color: #3882F6;
+    padding: 30px;
+    width: 60%;
+    border-radius: 10px;
+}
+
+.sign-up button {
+    border: 2px solid #FFF;
+    background-color: #3882f6; 
+    padding: 10px 30px;
+    border-radius: 10px;
     color: white; 
 }
 
-.fourth-header{
-    font-weight: bold;
-    font-size: 24px;
-    align-items: flex-start;
-    padding-left: 30px;
-    margin:40px 0 0 0;
-}
-
-.fourth-subtext{
-    margin:10px 0 40px 30px;
-}
-
-.fourth-button{
-    align-self: center;
-    padding:5px 25px 5px 25px;
-    color:#F9FAF8;
-    background-color: #3882f6;
-    border-radius: 10px;
-    border: none; 
-}
-
-.fourth-button:hover {
-    background-color: #13d3f9;;
+.sign-up button:hover {
+    color: 3882f6; 
+    background-color: white; 
 }
 
 /* =============================== Footer ================================ */

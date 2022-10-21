@@ -18,7 +18,7 @@
     padding:0px;
     margin:0px;
 }
-/* =============================== Header ================================ */
+/* ================================== Header =================================== */
 .head {
     padding: 30px 10%;
     background-color: #1f2937;
@@ -28,7 +28,7 @@
 }
 
 .logo {
- font-size: 32px; 
+ font-size: 24px; 
  flex-grow: 2;
 }
 
@@ -47,7 +47,7 @@
     color: white;
 }
 .nav_links li a:hover {
-    color: #0088a9
+    color: #13d3f9;
 }
 /* =============================== First Container ================================ */
 .first-container {
@@ -59,6 +59,32 @@
 #left-side {
     flex-grow: 2; 
     column-gap: 30px;
+    align-content: center;
+}
+
+.first-header {
+ font-size: 48px;
+ font-style: bolder;
+ padding: 10px;
+}
+
+.first-subtext {
+font-size: 18px;
+padding: 10px;
+}
+
+.first-button {
+background-color: #3882f6;
+border-radius: 50px;
+border: none; 
+padding: 10px 25px; 
+transition: all 0.3s ease 0s;
+cursor: pointer;
+padding: 10px;
+}
+
+.first-button:hover {
+    background-color: #13d3f9;;
 }
 
 #right-side {
@@ -68,6 +94,7 @@
     width:500px;
     height:200px;
     background-color: gray;
+    border-radius: 15px;
 }
 
 #right-side p{
@@ -77,26 +104,101 @@
 /* =============================== Second Container ================================ */
 .second-container {
     padding: 150px;
+    flex-direction: column;
 }
+
+.second-header {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.second-subtext {
+    width:180px;
+    text-align: center;  
+}
+
+.cards {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    gap:20px;
+}
+
+.card {
+    height:200px;
+    border-radius: 10px;
+    border:solid #3882f6 3px;
+    width:200px;
+}
+
 
 /* =============================== Third Container ================================ */
 .third-container {
-    padding: 150px;
+    padding: 100px;
     background-color: #e5e7eb;
-    color: #1f2937;
+    flex-direction: column;
+}
+
+#third-text{
+    margin-bottom:auto;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter; 
+}
+
+#third-subtext {
+    padding-left: 750px;
+    align-items: flex-end;
+}
+
+/* =============================== Fourth Container ================================ */
+.fourth-container {
+    display: flex;
+    padding: 100px;
     flex-direction: column;
 }
 
 
-/* =============================== Fourth Container ================================ */
-.fourth-container {
-    padding: 150px;
-    flex-direction: column;
+.fourth{
+    margin:80px 100px 80px 100px;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    height:140px;
+    width:1000px;
+    background-color: #3882f6;
+    border-radius: 25px;
+    color: white; 
+}
+
+.fourth-header{
+    font-weight: bold;
+    font-size: 24px;
+    align-items: flex-start;
+    padding-left: 30px;
+    margin:40px 0 0 0;
+}
+
+.fourth-subtext{
+    margin:10px 0 40px 30px;
+}
+
+.fourth-button{
+    align-self: center;
+    padding:5px 25px 5px 25px;
+    color:#F9FAF8;
+    background-color: #3882f6;
+    border-radius: 10px;
+    border: none; 
+}
+
+.fourth-button:hover {
+    background-color: #13d3f9;;
 }
 
 /* =============================== Footer ================================ */
 .foot {
-    padding: 30px;
+    padding: 20px;
     display: block;
     text-align: center;
     background-color: #1f2937;
